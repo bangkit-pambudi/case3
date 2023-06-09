@@ -1,0 +1,8 @@
+FROM python:3.8
+
+COPY . /app
+WORKDIR /app
+
+RUN pip install pandas
+
+CMD ["python", "app.py"]
